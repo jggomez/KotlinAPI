@@ -1,2 +1,3 @@
-# KotlinAPI
-API with Kotlin, SpringBoot and clean architecture
+# Kotlin API Gradle
+
+API with Kotlin, SpringBoot, Gradle and clean architecture
