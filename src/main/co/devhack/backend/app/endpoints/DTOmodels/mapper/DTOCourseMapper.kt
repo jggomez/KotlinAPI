@@ -9,20 +9,10 @@ import org.springframework.stereotype.Component
 class DTOCourseMapper : Mapper<Course, DTOCourse>() {
 
     override fun map(value: Course): DTOCourse {
-        val course = DTOCourse()
-        course.date = value.date
-        course.description = value.description
-        course.name = value.name
-
-        return course
+        return DTOCourse(value.name, value.description, value.date)
     }
 
     override fun reverseMap(value: DTOCourse): Course {
-        val course = Course("")
-        course.date = value.date
-        course.description = value.description
-        course.name = value.name
-
-        return course
+        return Course("", value.name, value.description, value.date)
     }
 }

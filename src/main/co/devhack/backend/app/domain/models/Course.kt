@@ -1,11 +1,4 @@
 package co.devhack.backend.app.domain.models
 
-data class Course(var id: String = "") {
-
-    var name: String = ""
-
-    var description: String = ""
-
-    var date: String = ""
-
-}
+data class Course(var id: String = "", val name: String,
+                  val description: String, val date: String)
